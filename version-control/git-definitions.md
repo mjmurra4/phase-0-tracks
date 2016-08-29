@@ -11,3 +11,5 @@ A method of version control, each branch stores that version of the file without
 A cocmmit is stores the changes made in that file as a version. A good commit message quickly describes the changes made in that version.
 * What is a merge conflict?
 A merge conflict when disagreeing changes are made to the master and the branch you are trying to commit.
+
+-Martin Murray
