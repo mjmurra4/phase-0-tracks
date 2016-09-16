@@ -1,0 +1,16 @@
+Elevator program
+- Step up to elevator and press button to call it
+	-If going up, press up button
+	-If going down, press down button
+- When elevator doors open, step in.
+	-Press the button to the floor with the number of your destination.
+- When elevator arrives at your destination, exit elevator.
+
+PB&J Program
+- Take plate, knife, bread, peanut butter and jelly; place them on the table
+- Take 2 slices of bread out of the bag and place it on the plate
+- Take lid off of peanut butter jar and jelly jar.
+- Take knife and take roughly a table spoon of peanut butter and spread evenly on a slice of bread.
+- Take knife and take a similar amount of jelly and spread it on the opposite slice of bread evenly.
+- Put 2 slices together with the peanut butter and jelly sides touching.
+- Enjoy!
