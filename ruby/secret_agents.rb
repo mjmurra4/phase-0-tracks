@@ -25,16 +25,7 @@ end
 # =>   Call password after change
 # =>   Go through each index and revert to original password using alphabet formula 
 # =>   Print decrypted password
-
-    #def decrypt
-    #    index = 0
-    #    while index < password.length
-    #        decrypt_pass[index] = password[index].cipher!
-    #        index += 1 
-    #    end
-        #puts password
-    #    puts decrypt_pass
-    #end     
+ 
 def decrypt(password)
     index = 0 
     alphabet = " abcdefghijklmnopqrstuvwxyz "
