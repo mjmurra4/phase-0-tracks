@@ -1,0 +1,48 @@
+Variables
+1. What is a variable? Why might a programmer use a variable?
+	- A storage unit associated with an identifier. Programmers use variables to more easily access bits of information, or more easily manipulate code.
+
+2. If the value of first_name is "Abraham" and last_name is "Lincoln", explain the order in which Ruby will run the line full_name = first_name + last_name, and what the final result will be.
+	- The result would be "AbrahamLincoln”. Ruby runs the line from left to right and since there is no space, will read it as one string.
+
+Data Types
+3. For each of the following data types, write a short definition and give at least one example of when you might use the data type in a program. (Don't use an example we've already provided.)
+
+string: Generally characters written out, words are strings.
+integer: numbers, anything that involves numbers you will need integers.
+float: numbers with decimal places. Division with a remainder is easiest with floats
+nil: data type that means “nothing”; if there is spot that is meant to be left blank, use nil.
+boolean: true/false statement. Use boolean when there is a checklist of yes/no options.
+Algorithms
+4. What is an algorithm?
+	-A set up steps to complete a task
+
+5. What are two common categories of algorithm in computer science? 
+	- Searching and sorting
+
+Methods
+6. What is a method? Why might a programmer choose to use a method?
+	- A bundle of code that can be quickly called upon to repeat a specific, isolated task.
+
+7. Define the following terms as they relate to a method. 
+
+return value: The value the method returns by default.
+side effect: side effects are interactions with calling methods or the outside world. an example is “puts”
+parameter: What defines a method.
+argument: the specific information you want the method to run. 
+implicit return: in Ruby the value returns automatically, so you don’t have to actually write “return”
+8. What are global scope and method scope? How do those scopes impact the availability of data at different points in a program?
+	- Global scope is available throughout your Ruby program. The method scope is isolated to the method. If you try and call upon some information you created within a method, while you are outside of the method. You will have no luck because the method scope limits that information.
+
+Control Flow
+9. What is control flow? Why might a programmer choose to use flow control?
+	- Control flow allows the programmer more flexibility by selecting different outcomes based on different inputs.
+
+10. Define the following terms as they relate to flow control.
+
+loop: This alters the control flow by repetitively looping through a bit of code until it is directed to stop.
+if: This allows you to create conditions where different reactions are made based on different inputs.
+else: Covers input/output not covered by “if” and elsif”
+elsif: Can create a list of “if” statements to cover more different types on inputs.
+while: a type of loop that runs while a certain condition holds true or false
+until: a type of loop that runs until a certain condition is held true or false.
