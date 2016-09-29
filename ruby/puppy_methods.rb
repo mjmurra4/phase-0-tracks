@@ -26,8 +26,55 @@ class Puppy
   		puts '*sleeps*'
   	end
   end
+
+  def initialize
+  	puts 'Initializing new puppy instance ...'
+  end
 end
 
-spot = Puppy.new
-spot.paw('brocolli')
+#spot = Puppy.new
+
+class Kitten
+
+	def meow(x)
+		puts 'Meow!' * x
+		x
+	end
+
+	def keyboard(using)
+		if using == 'yes'
+			puts '*sits on keyboard*'
+		else
+			puts '*looks out window*'
+		end
+	end
+
+	def play(toy)
+		puts "*plays with #{toy}*"
+		toy
+	end
+
+	def initialize
+  	puts 'Initializing new kitten instance ...'
+    end
+end
+
+#whiskers = Kitten.new
+#whiskers.play("string")
+
+cats = []
+
+while cats.length < 51
+	kitten_names = Kitten.new
+	cats << kitten_names
+end
+
+cats.each do |names|
+	names.play('string')
+	names.meow(1)
+	names.keyboard('yes')
+end
+
+
+
 
