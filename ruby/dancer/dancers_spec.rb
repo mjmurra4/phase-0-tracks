@@ -24,4 +24,9 @@ it "can start the next dance in the queue" do
   expect(dancer.begin_next_dance).to eq "Now dancing with Mikhail Baryshnikov."
   expect(dancer.card).to eq ["Anna Pavlova"]
 end
+
+it "wave to mom" do
+  expect(dancer.wave).to eq "Hi Mom!"
+end
+
 end
