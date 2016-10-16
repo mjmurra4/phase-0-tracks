@@ -1,0 +1,29 @@
+sqlite> SELECT * FROM bets;                      
+1|Andy|100|false|1
+2|Tory|35|false|2
+3|Josh|200|false|1
+
+sqlite> UPDATE bets SET win="true" WHERE team_id=2;
+
+sqlite> SELECT * FROM bets, teams WHERE bets.team_id = teams.id;
+1|Andy|100|false|1|1|Carolina Panthers
+2|Tory|35|true|2|2|New Orleans Saints
+3|Josh|200|false|1|1|Carolina Panthers
+
+sqlite> SELECT bets.name, teams.name FROM bets JOIN teams ON bets.team_id = teams.id;
+Andy|Carolina Panthers
+Tory|New Orleans Saints
+Josh|Carolina Panthers
+
+sqlite> DELETE FROM bets WHERE win="false";
+sqlite> SELECT * FROM bets, teams WHERE bets.team_id = teams.id;
+2|Tory|35|true|2|2|New Orleans Saints
+
+sqlite> SELECT bets.name, bets.win, teams.name FROM bets INNER JOIN teams ON bets.team_id=teams.id;
+Tory|true|New Orleans Saints
+
+sqlite> SELECT bets.name, bets.win, teams.name FROM bets LEFT JOIN teams ON bets.team_id=teams.id; 
+Tory|true|New Orleans Saints
+
+sqlite> SELECT bets.name, bets.win, teams.name FROM bets FULL JOIN teams ON bets.team_id=teams.id; 
+Error: RIGHT and FULL OUTER JOINs are not currently supported
